@@ -44,6 +44,7 @@ jobs:
         run: npm run lint:ts
       - name: Run styles lint and format check
         run: npm run lint:css
+      - name: Hello Potet
         run: echo "Hello $POTET"
         env:
           POTET: KoktPotet
