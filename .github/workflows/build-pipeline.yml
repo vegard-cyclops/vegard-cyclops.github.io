@@ -44,6 +44,9 @@ jobs:
         run: npm run lint:ts
       - name: Run styles lint and format check
         run: npm run lint:css
+        run: echo "Hello $POTET"
+        env:
+          POTET: KoktPotet
   deploy:
     needs: build
     runs-on: ubuntu-latest
