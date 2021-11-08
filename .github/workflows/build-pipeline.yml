@@ -41,6 +41,8 @@ jobs:
           SECRET: ${{secrets.PASSWORD}}
       - name: Test for public javascript library vulnerabilities 
         uses: lirantal/is-website-vulnerable@master
+        with:
+          scan-url: "https://vegard-cyclops.github.io/"
   deploy:
     needs: build
     runs-on: ubuntu-latest
