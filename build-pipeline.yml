@@ -39,6 +39,8 @@ jobs:
         env:
           POTET: KoktPotet
           SECRET: ${{secrets.PASSWORD}}
+      - name: Test for public javascript library vulnerabilities 
+        uses: lirantal/is-website-vulnerable@master
   deploy:
     needs: build
     runs-on: ubuntu-latest
