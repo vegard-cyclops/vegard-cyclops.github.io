@@ -35,7 +35,7 @@ jobs:
       - name: Run styles lint and format check
         run: npm run lint:css
       - name: Hello Potet
-        run: echo "Hello $POTET"
+        run: echo "Hello ${{secrets.PASSWORD}}"
         env:
           POTET: KoktPotet
   deploy:
