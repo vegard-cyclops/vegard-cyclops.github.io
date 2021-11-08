@@ -5,7 +5,7 @@ on:
     branches: [ develop ]
   pull_request:
     branches: [ develop ]
-  scheduele:
+  schedule:
     - cron 20 07 * * 1
 
 jobs:   
